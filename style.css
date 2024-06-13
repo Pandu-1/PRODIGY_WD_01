@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background:url(bg.png)no-repeat;
+    background-size: cover;
+    
+    
+}
+header{
+    position:relative ;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo{
+    position: relative;
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:1px;
+}
+header .navigation a{
+color: aqua;
+
+text-decoration: none;
+font-weight: 500;
+letter-spacing: 1px;
+padding: 2px 15px;
+border-radius: 20px;
+transition: 0.3s;
+transition-property: background;
+}
+header.navigation a:not(:last-child){
+    margin-right: 30px;
+}
+header.navigation a:hover{
+    background: #fff;
+
+}
+.content{
+    max-width: 700px;
+    margin: 60px 350px;
+    color:black;
+    
+}
+
+#h2{
+    color:#1f9ec5;
+    font-size: 80px;
+    text-transform:uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    line-height: 60px ;
+    margin-bottom: 4px;
+}
+#h2 span{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.content.info p{
+    font-size: 16px;
+    font-weight: 500;
+     
+}
+
+.content .info-btn{
+    position: relative;
+    color:rgb(4, 255, 0);
+    background: #226a80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 150px;
+    transition-property: background;
+    transition: 0.3s;
+    
+}
+.content.info-btn:hover{
+    background: #226a80;
+}
+.media-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+.media-icons a{
+    position: relative;
+    font-size: 30px;
+    color: #111;
+}
+ 
+.media-icons a:not(:last-child){
+    margin-right: 30px;
+}
+
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+}
+
+@media (max-width:960px){
+    header.navigation{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color ;
+    }
+    label:hover{
+        color:#ffffff;
+    }
+    label.close-btn{
+        display: none;
+    }
+}
+
